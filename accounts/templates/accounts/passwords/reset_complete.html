@@ -1,0 +1,12 @@
+{% extends "accounts/base.html" %}
+{% block title %}Reset password{% endblock %}
+
+{% block card_content %}
+<div>
+    <h5 class="mb-4 mt-2">Password updated</h5>
+    <p>
+        Your new password has been successfully updated. You can login with the new password now.
+    </p>
+    <a class="d-block text-center mt-2 small" href="{% url 'login_user' %}">Click here to login</a>
+</div>
+{% endblock %}

@@ -1,0 +1,18 @@
+{% extends "accounts/base.html" %}
+{% block title %}Email verification{% endblock %}
+
+{% block card_content %}
+
+{% if success %}
+<div>
+    <h5 class="text-success mb-4 mt-2">Email verified!</h5>
+    <p>Your email address is verified. Click here to login: <a href="{% url 'login_user' %}">Login</a></p>
+</div>
+{% else %}
+<div>
+    <h5 class="text-danger mb-4 mt-2">Email verification failed!</h5>
+    <p>Sorry, your verification link is invalid or expired. Please try forgot password option to get a new link in your
+        email.</p>
+    {% endif %}
+</div>
+{% endblock %}

@@ -1,0 +1,7 @@
+{% if errors %}
+<ul class="list-unstyled text-danger ps-3">
+    {% for error in errors %}
+    <li><small>{{ error|escape }}</small></li>
+    {% endfor %}
+</ul>
+{% endif %}

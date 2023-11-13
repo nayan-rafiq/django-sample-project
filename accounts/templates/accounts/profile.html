@@ -1,0 +1,12 @@
+{% extends "accounts/base.html" %}
+{% block title %}Profile{% endblock %}
+
+{% block card_content %}
+<div>
+    <h5 class="mb-4 mt-2">Profile</h5>
+    <p>
+        This is your profile.
+    </p>
+    <a class="d-block text-center mt-2 small" href="{% url 'logout_user' %}">Click here to logout</a>
+</div>
+{% endblock %}
